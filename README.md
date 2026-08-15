@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/crest-white.png">
+  <img alt="Beltra Industries" src="assets/crest-black.png" width="104">
+</picture>
+
 `BELTRA INDUSTRIES LLC · APPLIED AI`
 
 # Gustavo F. Beltra
@@ -24,6 +29,23 @@ The parts worth talking about: offline order queuing that reconciles on reconnec
 reconciliation against ticket-level records, and a relational schema covering menus, modifiers,
 tickets, seats, employees, shifts, and payments.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tab-manager-dark.png">
+  <img alt="TAB Manager dashboard: weekly revenue, labor cost, labor percentage, active staff, sales and labor trends, revenue by department" src="assets/tab-manager-light.png" width="100%">
+</picture>
+
+<sub>Manager desktop. Sales and labor trends, department revenue split, and live labor percentage
+against target. The offline indicator is real: the terminal keeps taking orders when the connection
+drops and reconciles them on reconnect.</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/tab-pos-dark.png">
+  <img alt="TAB POS terminal: menu search with on-screen keyboard, category tabs, and the open ticket panel" src="assets/tab-pos-light.png" width="100%">
+</picture>
+
+<sub>Server terminal. Touch-first, on-screen keyboard, category tabs, and the open ticket held
+alongside the menu.</sub>
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-4A4A48?style=flat-square&logo=typescript&logoColor=FAFAF9)
 ![React](https://img.shields.io/badge/React-4A4A48?style=flat-square&logo=react&logoColor=FAFAF9)
 ![Next.js](https://img.shields.io/badge/Next.js-4A4A48?style=flat-square&logo=nextdotjs&logoColor=FAFAF9)
@@ -49,6 +71,21 @@ A five-stage voice pipeline runs against a sub-1.5 second budget and streams fir
 translation finishes. Median time-to-first-audio is 311ms. Per-turn cost came down 61% after I
 worked out that synthesis was about 87% of unit cost and routed across two vendors with in-request
 failover.
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#4a4a48','primaryTextColor':'#fafaf9','primaryBorderColor':'#4a4a48','lineColor':'#9c9c9a','secondaryColor':'#4a4a48','tertiaryColor':'#4a4a48','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
+flowchart LR
+    A["VAD-gated<br/>capture"] --> B["Streaming<br/>STT"]
+    B --> C["LLM<br/>translation"]
+    C --> D["Voice<br/>synthesis"]
+    D --> E["Streamed<br/>playback"]
+    D -.->|"in-request failover"| F["Vendor B"]
+    F -.-> E
+    E ==>|"311ms median<br/>time-to-first-audio"| G(("Sub-1.5s<br/>budget"))
+```
+
+Playback starts before translation completes, so what the user hears begins at the first stage while
+the rest of the pipeline is still running.
 
 Backend is 23 Deno edge functions with row-level security and rate limiting. EU AI Act Article 50
 disclosure and US state biometric consent gating are enforced server-side.
