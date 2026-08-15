@@ -1,3 +1,5 @@
+<div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
   <img alt="Beltra Industries LLC" src="assets/logo-black.png" width="300">
@@ -7,7 +9,9 @@
 
 # Gustavo F. Beltra
 
-Full-stack and native mobile engineer. Pensacola, Florida.
+**Full-stack and native mobile engineer. Pensacola, Florida.**
+
+</div>
 
 I build the whole thing: schema, backend, interface, payments, and the deployment pipeline. Three
 platforms so far, all solo. Most of the work sits in private repositories, so this page is the
@@ -118,6 +122,25 @@ On-screen text is never executed as an instruction, so a malicious app cannot st
 through content it renders. Card numbers, SSNs, and one-time codes are masked on the device before
 anything reaches the model.
 
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#4a4a48','primaryTextColor':'#fafaf9','primaryBorderColor':'#4a4a48','lineColor':'#9c9c9a','secondaryColor':'#4a4a48','tertiaryColor':'#4a4a48','fontFamily':'ui-monospace, monospace','fontSize':'13px'}}}%%
+flowchart TB
+    A["Live screen"] --> B["On-device masking<br/>card numbers, SSNs, one-time codes"]
+    B --> C["Model"]
+    C -->|"output treated as untrusted"| D["Strict-schema parse"]
+    D --> E["Action allowlist"]
+    E --> F["Structural validation<br/>against the live screen"]
+    F --> G{"Policy engine"}
+    G -->|"every check passes"| H["Execute"]
+    G -->|"anything unresolved"| R["Refuse"]
+    D -.->|"malformed"| R
+    E -.->|"not on allowlist"| R
+    F -.->|"target absent"| R
+```
+
+Nothing reaches the model unmasked, and nothing reaches the screen unvalidated. Every rejection path
+converges on refusal, so an unexpected state fails closed instead of guessing.
+
 92 tests across 53 source files. Green build gate on compilation, tests, lint, and detekt.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-4A4A48?style=flat-square&logo=kotlin&logoColor=FAFAF9)
@@ -187,6 +210,8 @@ B.S. Engineering Technology, University of West Florida.
 
 ---
 
+<div align="center">
+
 `CONTACT`
 
 [![Website](https://img.shields.io/badge/beltraindustries.com-4A4A48?style=flat-square)](https://beltraindustries.com)
@@ -197,3 +222,5 @@ B.S. Engineering Technology, University of West Florida.
 Native English and Spanish.
 
 `EST. U.S.A. · BUILT FOR PRODUCTION`
+
+</div>
