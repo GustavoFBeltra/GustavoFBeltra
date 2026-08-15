@@ -1,16 +1,162 @@
-## Hi there 👋
+`BELTRA INDUSTRIES LLC · APPLIED AI`
 
-<!--
-**GustavoFBeltra/GustavoFBeltra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# Gustavo F. Beltra
 
-Here are some ideas to get you started:
+Full-stack and native mobile engineer. Pensacola, Florida.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+I build the whole thing: schema, backend, interface, payments, and the deployment pipeline. Three
+platforms so far, all solo. Most of the work sits in private repositories, so this page is the
+catalog.
+
+---
+
+`THE CATALOG`
+
+## BI-01 · TAB Point of Sales
+
+`COMMERCE & OPERATIONS`  `ACTIVE DEVELOPMENT`
+
+High-performance POS for hospitality and retail. Seven applications built solo over three years: an
+Electron terminal, a handheld server app, a manager desktop, a kitchen display system, an Android
+payment app running on Stripe S700 hardware, plus the marketing site and waitlist.
+
+The parts worth talking about: offline order queuing that reconciles on reconnect, terminal batch
+reconciliation against ticket-level records, and a relational schema covering menus, modifiers,
+tickets, seats, employees, shifts, and payments.
+
+![TypeScript](https://img.shields.io/badge/TypeScript-4A4A48?style=flat-square&logo=typescript&logoColor=FAFAF9)
+![React](https://img.shields.io/badge/React-4A4A48?style=flat-square&logo=react&logoColor=FAFAF9)
+![Next.js](https://img.shields.io/badge/Next.js-4A4A48?style=flat-square&logo=nextdotjs&logoColor=FAFAF9)
+![Node.js](https://img.shields.io/badge/Node.js-4A4A48?style=flat-square&logo=nodedotjs&logoColor=FAFAF9)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4A4A48?style=flat-square&logo=postgresql&logoColor=FAFAF9)
+![Electron](https://img.shields.io/badge/Electron-4A4A48?style=flat-square&logo=electron&logoColor=FAFAF9)
+![Stripe](https://img.shields.io/badge/Stripe%20Terminal-4A4A48?style=flat-square&logo=stripe&logoColor=FAFAF9)
+![Supabase](https://img.shields.io/badge/Supabase-4A4A48?style=flat-square&logo=supabase&logoColor=FAFAF9)
+![Vercel](https://img.shields.io/badge/Vercel-4A4A48?style=flat-square&logo=vercel&logoColor=FAFAF9)
+
+[tab-pos.com](https://tab-pos.com)
+
+---
+
+## BI-02 · Yapr
+
+`LANGUAGE & COMMUNICATION`  `ACTIVE DEVELOPMENT`
+
+Real-time voice translation, built twice natively. Swift and SwiftUI on iOS, Kotlin and Jetpack
+Compose on Android, no shared UI code, six product surfaces held at parity by a 33-point audit.
+
+A five-stage voice pipeline runs against a sub-1.5 second budget and streams first audio before
+translation finishes. Median time-to-first-audio is 311ms. Per-turn cost came down 61% after I
+worked out that synthesis was about 87% of unit cost and routed across two vendors with in-request
+failover.
+
+Backend is 23 Deno edge functions with row-level security and rate limiting. EU AI Act Article 50
+disclosure and US state biometric consent gating are enforced server-side.
+
+Android build complete, iOS in final pre-release testing.
+
+![Swift](https://img.shields.io/badge/Swift-4A4A48?style=flat-square&logo=swift&logoColor=FAFAF9)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-4A4A48?style=flat-square&logo=swift&logoColor=FAFAF9)
+![Kotlin](https://img.shields.io/badge/Kotlin-4A4A48?style=flat-square&logo=kotlin&logoColor=FAFAF9)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4A4A48?style=flat-square&logo=jetpackcompose&logoColor=FAFAF9)
+![Deno](https://img.shields.io/badge/Deno-4A4A48?style=flat-square&logo=deno&logoColor=FAFAF9)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4A4A48?style=flat-square&logo=postgresql&logoColor=FAFAF9)
+![WebRTC](https://img.shields.io/badge/WebRTC-4A4A48?style=flat-square&logo=webrtc&logoColor=FAFAF9)
+
+[yap-r.com](https://yap-r.com)
+
+---
+
+## BI-06 · Kinly
+
+`ACCESSIBILITY & ASSISTANCE`  `ACTIVE DEVELOPMENT`
+
+Technology, on your terms. An Android accessibility companion for older adults and people with
+visual, motor, or cognitive disabilities. You state a goal in plain language and it explains the
+screen, highlights the right control, or walks you through it.
+
+It treats model output as untrusted input. Strict-schema parsing against an action allowlist,
+structural validation against the live screen, then a deterministic fail-closed policy engine.
+On-screen text is never executed as an instruction, so a malicious app cannot steer the agent
+through content it renders. Card numbers, SSNs, and one-time codes are masked on the device before
+anything reaches the model.
+
+92 tests across 53 source files. Green build gate on compilation, tests, lint, and detekt.
+
+![Kotlin](https://img.shields.io/badge/Kotlin-4A4A48?style=flat-square&logo=kotlin&logoColor=FAFAF9)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4A4A48?style=flat-square&logo=jetpackcompose&logoColor=FAFAF9)
+![Hilt](https://img.shields.io/badge/Hilt-4A4A48?style=flat-square&logo=android&logoColor=FAFAF9)
+![Room](https://img.shields.io/badge/Room-4A4A48?style=flat-square&logo=android&logoColor=FAFAF9)
+![Gradle](https://img.shields.io/badge/Gradle-4A4A48?style=flat-square&logo=gradle&logoColor=FAFAF9)
+
+---
+
+`TECHNOLOGY`
+
+**Languages**
+
+![TypeScript](https://img.shields.io/badge/TypeScript-4A4A48?style=flat-square&logo=typescript&logoColor=FAFAF9)
+![JavaScript](https://img.shields.io/badge/JavaScript-4A4A48?style=flat-square&logo=javascript&logoColor=FAFAF9)
+![Kotlin](https://img.shields.io/badge/Kotlin-4A4A48?style=flat-square&logo=kotlin&logoColor=FAFAF9)
+![Swift](https://img.shields.io/badge/Swift-4A4A48?style=flat-square&logo=swift&logoColor=FAFAF9)
+![Python](https://img.shields.io/badge/Python-4A4A48?style=flat-square&logo=python&logoColor=FAFAF9)
+![SQL](https://img.shields.io/badge/SQL-4A4A48?style=flat-square&logo=postgresql&logoColor=FAFAF9)
+![Bash](https://img.shields.io/badge/Bash-4A4A48?style=flat-square&logo=gnubash&logoColor=FAFAF9)
+
+**Interface**
+
+![React](https://img.shields.io/badge/React-4A4A48?style=flat-square&logo=react&logoColor=FAFAF9)
+![Next.js](https://img.shields.io/badge/Next.js-4A4A48?style=flat-square&logo=nextdotjs&logoColor=FAFAF9)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-4A4A48?style=flat-square&logo=swift&logoColor=FAFAF9)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4A4A48?style=flat-square&logo=jetpackcompose&logoColor=FAFAF9)
+![Electron](https://img.shields.io/badge/Electron-4A4A48?style=flat-square&logo=electron&logoColor=FAFAF9)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4A4A48?style=flat-square&logo=tailwindcss&logoColor=FAFAF9)
+![Three.js](https://img.shields.io/badge/Three.js-4A4A48?style=flat-square&logo=threedotjs&logoColor=FAFAF9)
+
+**Backend and data**
+
+![Node.js](https://img.shields.io/badge/Node.js-4A4A48?style=flat-square&logo=nodedotjs&logoColor=FAFAF9)
+![Deno](https://img.shields.io/badge/Deno-4A4A48?style=flat-square&logo=deno&logoColor=FAFAF9)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4A4A48?style=flat-square&logo=postgresql&logoColor=FAFAF9)
+![Supabase](https://img.shields.io/badge/Supabase-4A4A48?style=flat-square&logo=supabase&logoColor=FAFAF9)
+![Firebase](https://img.shields.io/badge/Firebase-4A4A48?style=flat-square&logo=firebase&logoColor=FAFAF9)
+![Room](https://img.shields.io/badge/Room-4A4A48?style=flat-square&logo=android&logoColor=FAFAF9)
+
+**Machine learning and vision**
+
+![TensorFlow](https://img.shields.io/badge/TensorFlow-4A4A48?style=flat-square&logo=tensorflow&logoColor=FAFAF9)
+![Keras](https://img.shields.io/badge/Keras-4A4A48?style=flat-square&logo=keras&logoColor=FAFAF9)
+![OpenCV](https://img.shields.io/badge/OpenCV-4A4A48?style=flat-square&logo=opencv&logoColor=FAFAF9)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-4A4A48?style=flat-square&logo=scikitlearn&logoColor=FAFAF9)
+
+**Infrastructure**
+
+![Vercel](https://img.shields.io/badge/Vercel-4A4A48?style=flat-square&logo=vercel&logoColor=FAFAF9)
+![Docker](https://img.shields.io/badge/Docker-4A4A48?style=flat-square&logo=docker&logoColor=FAFAF9)
+![Stripe](https://img.shields.io/badge/Stripe-4A4A48?style=flat-square&logo=stripe&logoColor=FAFAF9)
+![Gradle](https://img.shields.io/badge/Gradle-4A4A48?style=flat-square&logo=gradle&logoColor=FAFAF9)
+![Git](https://img.shields.io/badge/Git-4A4A48?style=flat-square&logo=git&logoColor=FAFAF9)
+![GitHub](https://img.shields.io/badge/GitHub-4A4A48?style=flat-square&logo=github&logoColor=FAFAF9)
+
+---
+
+`BEFORE THIS`
+
+Five years at a 780-seat restaurant, promoted from expo to back of house manager, running up to 26
+kitchen staff on nights around $139,000 in sales. The bar team was counting liquor on clipboards for
+two hours, so I built them a web app that got it to 45 minutes. That is where the software started.
+
+B.S. Engineering Technology, University of West Florida.
+
+---
+
+`CONTACT`
+
+[![Website](https://img.shields.io/badge/beltraindustries.com-4A4A48?style=flat-square)](https://beltraindustries.com)
+[![Portfolio](https://img.shields.io/badge/gustavobeltra.com-4A4A48?style=flat-square)](https://gustavobeltra.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-4A4A48?style=flat-square)](https://linkedin.com/in/GustavoFBeltra)
+[![Email](https://img.shields.io/badge/Email-4A4A48?style=flat-square)](mailto:Gustavo.F.Beltra@outlook.com)
+
+Native English and Spanish.
+
+`EST. U.S.A. · BUILT FOR PRODUCTION`
