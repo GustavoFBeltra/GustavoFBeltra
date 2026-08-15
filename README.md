@@ -1,9 +1,9 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/crest-white.png">
-  <img alt="Beltra Industries" src="assets/crest-black.png" width="104">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
+  <img alt="Beltra Industries LLC" src="assets/logo-black.png" width="300">
 </picture>
 
-`BELTRA INDUSTRIES LLC · APPLIED AI`
+`APPLIED AI`
 
 # Gustavo F. Beltra
 
