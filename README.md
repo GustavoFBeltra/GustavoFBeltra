@@ -91,10 +91,48 @@ flowchart LR
 Playback starts before translation completes, so what the user hears begins at the first stage while
 the rest of the pipeline is still running.
 
+<!-- ─────────────────────────────────────────────────────────────────────────────
+     YAPR DEMO VIDEO. Replace the URL on the line below, then delete this comment.
+
+     To get the URL: open a New Issue on this repo, drag yapr-tour-dark.mp4 into
+     the comment box, wait for the upload to finish, copy the generated
+     https://github.com/user-attachments/assets/... URL, and DO NOT submit the
+     issue. The asset is already live once the upload completes.
+
+     Do not commit the .mp4 and link it by relative path. That does not play.
+     ───────────────────────────────────────────────────────────────────────── -->
+
+https://github.com/user-attachments/assets/REPLACE-WITH-UPLOADED-URL
+
+<sub>Real-time translation on Android. Capture, transcription, translation, and synthesized playback
+in one pass.</sub>
+
+Translation is the core, and it sits inside a travel dashboard. Arrive somewhere and the app resolves
+the destination into what you need in the first ten minutes: local time, currency, weather, the
+emergency number, whether to tip, which plug and what voltage, whether the tap water is safe. Under
+that, a quick-phrase bar and a local news feed with each headline translated and the original kept
+underneath.
+
+There is also an emergency screen with country-specific service numbers, Medical ID, and an SOS
+beacon, and its translations work with no connection at all.
+
+The third piece is a course that does not exist until you ask for it. You state a goal, an edge
+function generates and validates a curriculum, and the app plays it through seven exercise types.
+Speaking drills score against the same streaming STT the translator uses; the rest grade on-device.
+Completed material decays back into review on an SM-2-style schedule, and each unit ends in a scoped
+roleplay conversation that gets graded.
+
 Backend is 23 Deno edge functions with row-level security and rate limiting. EU AI Act Article 50
 disclosure and US state biometric consent gating are enforced server-side.
 
-Android build complete, iOS in final pre-release testing.
+Also in there: an **Android Auto** surface built on the Car App Library, so the interpreter and the
+emergency screens project onto a head unit through the host's templates instead of Compose. TOTP
+two-factor with server-side step-up on sensitive operations, and a biometric app lock. GDPR export
+and deletion, both backed by their own edge functions. A home-screen widget that keeps the streak
+current without opening the app.
+
+Both platforms carry the full screen set. Android is feature-complete, iOS is in final pre-release
+testing. Neither app is published to a store.
 
 ![Swift](https://img.shields.io/badge/Swift-4A4A48?style=flat-square&logo=swift&logoColor=FAFAF9)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-4A4A48?style=flat-square&logo=swift&logoColor=FAFAF9)
