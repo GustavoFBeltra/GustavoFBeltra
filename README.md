@@ -91,21 +91,10 @@ flowchart LR
 Playback starts before translation completes, so what the user hears begins at the first stage while
 the rest of the pipeline is still running.
 
-<!-- ─────────────────────────────────────────────────────────────────────────────
-     YAPR DEMO VIDEO. Replace the URL on the line below, then delete this comment.
+https://github.com/user-attachments/assets/7d9d2d71-7bd0-47c5-a304-375c91deae03
 
-     To get the URL: open a New Issue on this repo, drag yapr-tour-dark.mp4 into
-     the comment box, wait for the upload to finish, copy the generated
-     https://github.com/user-attachments/assets/... URL, and DO NOT submit the
-     issue. The asset is already live once the upload completes.
-
-     Do not commit the .mp4 and link it by relative path. That does not play.
-     ───────────────────────────────────────────────────────────────────────── -->
-
-https://github.com/user-attachments/assets/REPLACE-WITH-UPLOADED-URL
-
-<sub>Real-time translation on Android. Capture, transcription, translation, and synthesized playback
-in one pass.</sub>
+<sub>Yapr on Android. Language pair, then the mic, then translated speech in the other person's
+language.</sub>
 
 Translation is the core, and it sits inside a travel dashboard. Arrive somewhere and the app resolves
 the destination into what you need in the first ten minutes: local time, currency, weather, the
