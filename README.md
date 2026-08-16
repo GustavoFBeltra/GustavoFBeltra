@@ -91,10 +91,13 @@ flowchart LR
 Playback starts before translation completes, so what the user hears begins at the first stage while
 the rest of the pipeline is still running.
 
-https://github.com/user-attachments/assets/7d9d2d71-7bd0-47c5-a304-375c91deae03
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/7d9d2d71-7bd0-47c5-a304-375c91deae03" width="300" controls muted></video>
+</div>
 
-<sub>Yapr on Android. Language pair, then the mic, then translated speech in the other person's
-language.</sub>
+<div align="center">
+<sub>Yapr on Android. Language pair, then the mic, then translated speech in the other person's language.</sub>
+</div>
 
 Translation is the core, and it sits inside a travel dashboard. Arrive somewhere and the app resolves
 the destination into what you need in the first ten minutes: local time, currency, weather, the
