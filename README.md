@@ -1,17 +1,7 @@
-<div align="center">
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logo-white.png">
-  <img alt="Beltra Industries LLC" src="assets/logo-black.png" width="300">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Gustavo F. Beltra — Beltra Industries LLC. Full-stack and native mobile engineer, Pensacola, Florida." src="assets/banner-light.svg" width="100%">
 </picture>
-
-`APPLIED AI`
-
-# Gustavo F. Beltra
-
-**Full-stack and native mobile engineer. Pensacola, Florida.**
-
-</div>
 
 I build the whole thing: schema, backend, interface, payments, and the deployment pipeline. Three
 platforms so far, all solo. Most of the work sits in private repositories, so this page is the
@@ -227,6 +217,18 @@ converges on refusal, so an unexpected state fails closed instead of guessing.
 ![Gradle](https://img.shields.io/badge/Gradle-4A4A48?style=flat-square&logo=gradle&logoColor=FAFAF9)
 ![Git](https://img.shields.io/badge/Git-4A4A48?style=flat-square&logo=git&logoColor=FAFAF9)
 ![GitHub](https://img.shields.io/badge/GitHub-4A4A48?style=flat-square&logo=github&logoColor=FAFAF9)
+
+---
+
+`ACTIVITY`
+
+<img src="https://streak-stats.demolab.com/?user=GustavoFBeltra&background=0a0a0a&border=4a4a48&stroke=4a4a48&ring=fafaf9&fire=e5484d&currStreakNum=fafaf9&sideNums=fafaf9&currStreakLabel=9c9c9a&sideLabels=9c9c9a&dates=8f8f8d" width="49%" alt="Contribution streak" />
+<img src="https://github-readme-stats-tan-alpha-36.vercel.app/api?username=GustavoFBeltra&include_all_commits=true&hide_rank=true&show_icons=true&bg_color=0a0a0a&title_color=fafaf9&text_color=a6a6a3&icon_color=9c9c9a&border_color=4a4a48" width="49%" alt="GitHub statistics" />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GustavoFBeltra/GustavoFBeltra/output/snake-dark.svg">
+  <img src="https://raw.githubusercontent.com/GustavoFBeltra/GustavoFBeltra/output/snake-light.svg" width="100%" alt="Contribution graph" />
+</picture>
 
 ---
 
