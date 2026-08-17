@@ -11,12 +11,12 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=GustavoFBeltra&border_radius=0&background=0a0a0a&border=4a4a48&stroke=4a4a48&ring=fafaf9&fire=e5484d&currStreakNum=fafaf9&sideNums=fafaf9&currStreakLabel=9c9c9a&sideLabels=9c9c9a&dates=8f8f8d">
-  <img src="https://streak-stats.demolab.com/?user=GustavoFBeltra&border_radius=0&background=fafaf9&border=e5e4e1&stroke=e5e4e1&ring=0a0a0a&fire=e5484d&currStreakNum=0a0a0a&sideNums=0a0a0a&currStreakLabel=4a4a48&sideLabels=4a4a48&dates=9c9c9a" width="49%" alt="Contribution streak" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card_activity_dark.svg">
+  <img src="assets/card_activity_light.svg" width="49%" alt="Contributions: 868 total, 120 active days, current streak 2, longest streak 17" />
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-tan-alpha-36.vercel.app/api?username=GustavoFBeltra&include_all_commits=true&hide_rank=true&show_icons=true&border_radius=0&bg_color=0a0a0a&title_color=fafaf9&text_color=a6a6a3&icon_color=9c9c9a&border_color=4a4a48">
-  <img src="https://github-readme-stats-tan-alpha-36.vercel.app/api?username=GustavoFBeltra&include_all_commits=true&hide_rank=true&show_icons=true&border_radius=0&bg_color=fafaf9&title_color=0a0a0a&text_color=4a4a48&icon_color=9c9c9a&border_color=e5e4e1" width="49%" alt="GitHub statistics" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/card_repos_dark.svg">
+  <img src="assets/card_repos_light.svg" width="49%" alt="Repository totals: 540 commits, 22 pull requests, 3 products built, 100% solo" />
 </picture>
 
 ---
